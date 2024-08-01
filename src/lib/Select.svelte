@@ -477,10 +477,10 @@
     }
 
     export function handleClear() {
-        dispatch('clear', value);
         value = undefined;
         closeList();
         handleFocus();
+        dispatch('clear', value);
     }
 
     onMount(() => {
